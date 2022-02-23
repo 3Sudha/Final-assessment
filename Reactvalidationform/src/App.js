@@ -34,9 +34,9 @@ function App() {
       errors.username = "Username is required!";
     }
       
-    if((values.username.length <=2) || (values.username.length >10))
+    if((values.username.length <=10) || (values.username.length >30))
     {
-          errors.username ="Username length must be between 2 and 10";
+          errors.username ="Username length must be between 10 and 30";
     }
       
     if(!isNaN(values.username))
